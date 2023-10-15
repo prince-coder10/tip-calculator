@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Frontend Mentor | Tip calculator app</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  </head>
+  <body>
+    <header role="heading">
+      SPLI <br />
+      TTER
+    </header>
+    <section class="main" role="main">
+      <div class="user__inputs">
+        <form id="user-form" role="form">
+          <span class="bill">
+            <span class="bills">
+              <label for="bill">Bill</label>
+              <p id="bill-error"></p>
+            </span>
+            <img
+              src="./images/icon-dollar.svg"
+              alt="$"
+              role="img"
+              class="dollar"
+            />
+            <input type="text" name="bill" id="bill" placeholder="0" />
+          </span>
+          <span class="select__tip">
+            <input type="button" value="5%" id="5%" class="buttons actives" />
+            <input type="button" value="10%" id="10%" class="buttons" />
+            <input type="button" value="15%" id="15%" class="buttons" />
+            <input type="button" value="25%" id="25%" class="buttons" />
+            <input type="button" value="50%" id="50%" class="buttons" />
+            <input type="NUMBER" id="custom" placeholder="Custom" />
+          </span>
+          <span class="people">
+            <span class="peoples">
+              <label for="people">Number of people</label>
+              <p id="peps-error"></p>
+            </span>
+
+            <img
+              src="./images/icon-person.svg"
+              alt="person"
+              role="img"
+              class="peps"
+            />
+            <input type="text" name="people" id="people" placeholder="0" />
+          </span>
+        </form>
+      </div>
+      <div class="tip__overview" role="doc-chapter">
+        <div class="tip__amount">
+          <span class="info">
+            <strong>Tip amount</strong>
+            <p>/ person</p>
+          </span>
+          <span class="price">
+            <p id="tip-amount">$0.00</p>
+          </span>
+        </div>
+        <div class="total">
+          <span class="info">
+            <strong>Total</strong>
+            <p>/ person</p>
+          </span>
+          <span class="price">
+            <p id="total-amount">$0.00</p>
+          </span>
+        </div>
+        <span class="reset__btn">
+          <button id="reset">RESET</button>
+        </span>
+      </div>
+    </section>
+    <div class="attribution" role="doc-footnote">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="github.com/prince-coder10">Prince Mbakwe</a>.
+    </div>
+  </body>
+  <script src="./script.js"></script>
+</html>
